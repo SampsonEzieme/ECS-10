@@ -55,7 +55,7 @@ def totalValue(i, j, Table):
 
 def liveOrDie(value, i, j, Table, copyOfTable):
     """This function determines if the current cell at point [i][j]
-       should live or die based upon the total number of lives cells
+       should live or die based upon the total number of live cells
        surrounding it."""
     if Table[i][j] == 1:
         if value < 2:
@@ -146,7 +146,7 @@ def fileToTable(inFile):
 
 def saveFile(table):
     """This function asks whether the user would like to save the last generation
-       into a file. If the user doesnt want to save the function ends.
+       into a file. If the user doesn't want to save, the function ends.
        If the user types in yes the function will ask for a file to write to.
        If that file exist it will ask the user if they want to overwrite that file.
        If that file doesn't exist it creates a new file to save to."""
@@ -169,7 +169,7 @@ def saveFile(table):
 
 
 def tableToFile(destName, table):
-    """This function turn a table into a file by converting it to a sting and writing
+    """This function turns a table into a file by converting it to a sting and writing
        it to a file."""
     print()
     print("Saving data to ", destName)
